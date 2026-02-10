@@ -1,16 +1,133 @@
 <!DOCTYPE html>
+<head>
+    <title>Tasha's Portfolio</title>
+    <!-- chosen fonts from googl fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Lancelot&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <!-- nav bar connected to respective container-->
+    <div class="nav_bar">
+        <a href="#home">Home</a>
+        <a href="#about-me">About Me</a>
+        <a href="#passion">Passion</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#contacts">Contact</a>
+    </div>
 
-<html>
-    <head>
-        <title>hello</title>
-    </head>
+    <main class="main-container" id="home">
+        
+        <!-- first flex container -->
+        <section class="flex-container full-width main-section">
+            <div class="content-wrapper">
+                <img src="assets/icon.jpg" alt="Natasha Lois Montas" class="profile-photo">
+                <h1>Natasha Lois S. Montas</h1>
+                <p>Welcome to My Portfolio</p>
+                <p>Front-End Developer & Illustrator </p>
+            </div>
+        </section>
 
-    <body>
-    <h1>hello</h1>
-    <p>hello</p>
-    <hr>
-    <p>hello</p>    
-    </body>
+        <!-- second flex container, 3 boxes -->
+        <div class="row-container" id="about-me">
+            <section class="flex-container about-section">
+                <div class="content-wrapper">
+                    <h2>About Me</h2>
+                    <p>I am Natasha Lois S. Montas, a batch 2024 BS Computer Science student with passion for creating aesthetic and functional output. My journey in computer science came from my love for creating and my dedication to front-end development. I believe that technology should not only work but also look pleasing and prioritize users' experience. And as a front-end enthusiast, I do believe that users are always correct.</p>
+                </div>
+            </section>
 
+            <section class="flex-container skills-section">
+                <div class="content-wrapper">
+                    <h2>My Skills</h2>
+                    <div>
+                        <h3>Web Programming</h3>
+                        <p>HTML5, JavaScript</p>
+                        
+                        <h3>Front-End Development</h3>
+                        <p>UI/UX Design, User Interface Implementation</p>
+
+                        <h3>Creative Design</h3>
+                        <p>Digital Art, Illustration, Publication Materials</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex-container projects-section">
+                <div class="content-wrapper">
+                    <h2>Previous Projects</h2>
+                    <div class="project">
+                        <h3>CMSC 22: Sari-Sari Store Storefront</h3>
+                        <p>Created a complete storefront application with traditional Filipino sari-sari store theme with my groupmates, implementing object-oriented programming principles and creating an intuitive user interface for sales tracking.</p>
+                    </div>
+                    <div class="project">
+                        <h3>CMSC 150: City Pollution Reduction Calculator</h3>
+                        <p>Created a check-box based pollutant reduction calculator application that uses minimization.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- third flex container -->
+        <section class="flex-container full-width section-3" id="passion">
+            <div class="content-wrapper">
+                <h2>Why Choose Me?</h2>
+                <p>I am a creative person who prioritizes users' experience and have various experience in design even outside Computer Science. I am a hardworker and I have lots of experiences in creative creation, may it be on websites, publication materials, or art.</p>
+            </div>
+        </section>
+
+        <!-- fourth flex container -->
+        <section class="flex-container full-width section-4" id="experiences">
+            <div class="content-wrapper">
+                <h2>My Experiences</h2>
+                <div class="experience">
+                    <h3>Education</h3>
+                    <p>BS Computer Science, Batch 2024</p>
+                    <p>Specialized in Front-End Development and User Interface Design</p>
+                </div>
+                <div class="experience">
+                    <h3>Technical Projects</h3>
+                    <p>Completed multiple projects including web applications, computational tools, and design implementations across various Computer Science subjects (CMSC 22, CMSC 150, and more)</p>
+                </div>
+                <div class="experience">
+                    <h3>Creative Portfolio</h3>
+                    <p>Various experience on digital art, illustrations, and publication materials showcasing talent in visual design and creative problem-solving</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- fifth flex container, 3 boxes -->
+        <div class="row-container" id="contacts">
+            <section class="flex-container section-5a">
+                <div class="content-wrapper">
+                    <h2>Social Media</h2>
+                    <p><strong>Facebook:</strong><br><a href="https://facebook.com/natashaiois" target="_blank">facebook.com/natashaiois</a></p>
+                    <p><strong>Instagram:</strong><br><a href="https://instagram.com/nata_de_lois" target="_blank">@nata_de_lois</a></p>
+                </div>
+            </section>
+
+            <section class="flex-container section-5b">
+                <div class="content-wrapper">
+                    <h2>Portfolio & Resume</h2>
+                    <p><strong>Design Portfolio:</strong></p>
+                    <p><a href="https://drive.google.com/drive/folders/1kuYOODtUELDL69tVO_2-Vrz8yY84Tz5k?usp=drive_link" target="_blank">View My Creative Work</a></p>
+                    <p>Linked is my resume and collection of digital art, illustrations, and publication materials</p>
+                    <p>All assets used are digitally drawn by me ><</p>
+                </div>
+            </section>
+
+            <section class="flex-container section-5c">
+                <div class="content-wrapper">
+                    <h2>Professional Network</h2>
+                    <p><strong>LinkedIn:</strong></p>
+                    <p><a href="https://www.linkedin.com/in/natasha-lois-montas-1920ba312" target="_blank">Connect with me on LinkedIn</a></p>
+                    <p>Let's collaborate for future projects!</p>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+</body>
 </html>
-
