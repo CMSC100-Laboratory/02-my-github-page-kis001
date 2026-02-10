@@ -1,0 +1,197 @@
+/*
+Theme
+
+Color palette
+#ffcfea -> light pink
+#594952 -> brown
+#80506b -> purple
+#fff5df -> beige
+
+Fonts (from google fonts lang)
+Gabriela -> headings 
+Lancelot -> paragraphs
+
+*/
+
+/* align to the screen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff5df;
+    font-family: 'Lancelot', cursive;
+}
+
+/* nav_bar */
+.nav_bar {
+    display: flex;
+    border: 5px solid #ffcfea;
+    flex-direction: row;
+    background-color: #80506b;
+    padding: 15px 30px;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* fix nav bar link default style */
+.nav_bar a {
+    color: #fff5df;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    font-family: 'Gabriela', serif;
+}
+
+/* fix nav bar link default style */
+.nav_bar a:hover {
+    background-color: #ffcfea;
+    color: #594952;
+    border-radius: 5px;
+}
+
+/* main container -> to stack vertically */
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* hold row section -> to stack horizontally */
+.row-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* flex container */
+.flex-container {
+    display: flex;
+    flex: 1;
+    border: 2px solid #ffcfea;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+/* overlay */
+.flex-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(89, 73, 82, 0.4);
+    z-index: 1;
+}
+
+/* content wrappers */
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff5df;
+    padding: 30px;
+    background-color: rgba(128, 80, 107, 0.85);
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.content-wrapper h1 {
+    font-family: 'Gabriela', serif;
+    font-size: 48px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-wrapper h2 {
+    font-family: 'Gabriela', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-wrapper h3 {
+    font-family: 'Gabriela', serif;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.content-wrapper p {
+    font-family: 'Lancelot', cursive;
+    font-size: 16px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.content-wrapper a {
+    color: #ffcfea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.content-wrapper a:hover {
+    color: #fff5df;
+    text-decoration: underline;
+}
+
+/* icon */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffcfea;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* create boxes for project, exp section */
+.project,
+.experience {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(255, 207, 234, 0.2);
+    border-radius: 8px;
+}
+
+.experience h3 {
+    margin-top: 0;
+}
+
+/* bg pics */
+.main-section {
+    background-image: url("assets/flexcontainer1.png");
+}
+
+.section-3 {
+    background-image: url("assets/flexcontainer2.png");
+}
+
+.section-4 {
+    background-image: url("assets/flexcontainer3.png");
+}
+
+/* same bg pic for those in rows of 3*/
+.about-section,
+.skills-section,
+.projects-section,
+.section-5a,
+.section-5b,
+.section-5c {
+    background-image: url("assets/flexcontainer.png");
+}
